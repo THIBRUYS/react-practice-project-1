@@ -1,7 +1,7 @@
 import AddUser from './components/Users/AddUser';
 import UsersList from './components/Users/UsersList';
 import { useState } from 'react'
-
+import Card from './components/UI/Card'
 
 function App() {
   const [usersList, setUsersList] = useState([]);
@@ -11,7 +11,9 @@ function App() {
     })
   }
   let list = (
-    <p> No users found, add one !</p>
+    <Card>
+      <p> No users found, add one !</p>
+    </Card>
   )
   if (usersList.length > 0) {
     list = (<UsersList users={usersList}/>);
