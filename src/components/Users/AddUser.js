@@ -1,5 +1,6 @@
-import Card from '../UI/Card'
-import styles from './AddUser.module.css'
+import Card from '../UI/Card';
+import Button from '../UI/Button';
+import styles from './AddUser.module.css';
 
 const AddUser = () => {
     const addUserHandler = (event) =>{
@@ -13,10 +14,10 @@ const AddUser = () => {
                 <input id='username' type='text' />
                 <label htmlFor='age'>Age (years)</label>
                 <input id='age' type='number' />
-                <button type='submit'> add user</button>
+                <Button buttonType='submit'> add user</Button>
             </form>
         </Card>
     );
 }
 
-export default AddUser
+export default AddUser;
