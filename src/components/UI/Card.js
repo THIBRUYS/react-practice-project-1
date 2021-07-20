@@ -5,7 +5,7 @@ const Card = (props) => {
         <div className={`${styles.card} ${props.className}`}>
             {props.children}
         </div>
-    )
+    );
 }
 
-export default Card
+export default Card;
