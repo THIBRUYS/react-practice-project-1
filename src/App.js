@@ -11,7 +11,12 @@ function App() {
     })
   }
   let list = (
-    <Card>
+    <Card style={{
+      margin: '2rem auto',
+      padding: '1rem',
+      width: '90%',
+      maxWidth: '40rem'
+      }}>
       <p> No users found, add one !</p>
     </Card>
   )
@@ -19,10 +24,10 @@ function App() {
     list = (<UsersList users={usersList}/>);
   }
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUserHandler}/>
       {list}
-    </div>
+    </>
   );
 }
 
